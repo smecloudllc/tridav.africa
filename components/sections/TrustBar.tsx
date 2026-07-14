@@ -5,7 +5,19 @@ import { motion } from "framer-motion";
 import { fadeIn, viewportOnce } from "@/lib/motion";
 
 // TODO: swap for real client logos when available.
-const clients = ["GSI", "Ghana Prisons", "Queensland School", "Ministry of Health"];
+const clients = [
+  "JIS",
+  "Ghana Prisons",
+  "Queensland School",
+  "Ministry of Health",
+  "HAAB Aviation",
+  "The Law Institute",
+  "ACP Clinic",
+  "SG Cancer",
+  "Parkstone Capital",
+  "PCG",
+  "Alphaspace",
+];
 
 export function TrustBar() {
   return (
