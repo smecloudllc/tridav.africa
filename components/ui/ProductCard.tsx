@@ -17,22 +17,35 @@ export function ProductCard({ product }: { product: Product }) {
       style={{ transformPerspective: 900 }}
       className="group flex h-full flex-col overflow-hidden rounded-xl border border-border bg-card transition-colors duration-300 hover:border-primary/40"
     >
-      {/* Abstract visual header instead of stock imagery. */}
       <div
         aria-hidden
         className={cn(
-          "relative h-36 overflow-hidden border-b border-border bg-gradient-to-br",
-          product.gradient,
+          "relative h-36 overflow-hidden border-b border-border",
+          !product.imageSrc && "bg-gradient-to-br",
+          !product.imageSrc && product.gradient,
         )}
       >
-        <div className="absolute inset-0 bg-dots opacity-60" />
+        {product.imageSrc ? (
+          <>
+            <Image
+              src={product.imageSrc}
+              alt=""
+              fill
+              sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/5 to-transparent" />
+          </>
+        ) : (
+          <div className="absolute inset-0 bg-dots opacity-60" />
+        )}
         {product.logoSrc ? (
-          <span className="absolute bottom-4 left-5 flex size-12 items-center justify-center rounded-xl border border-white/10 bg-white p-2 shadow-sm">
+          <span className="absolute bottom-4 left-5 flex size-12 items-center justify-center rounded-xl border border-white/10 bg-white p-1 shadow-sm">
             <Image
               src={product.logoSrc}
               alt={`${product.name} logo`}
-              width={40}
-              height={40}
+              width={44}
+              height={44}
               className="size-full object-contain"
             />
           </span>

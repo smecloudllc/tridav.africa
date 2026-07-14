@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Clock, Mail, MapPin } from "lucide-react";
+import { Clock, Mail, MapPin, Phone } from "lucide-react";
 
 import { ContactForm } from "@/components/sections/ContactForm";
+import { phoneNumbers } from "@/lib/data/contact";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -43,6 +44,23 @@ export default function ContactPage() {
                   >
                     hello@tridav.africa
                   </a>
+                </dd>
+              </div>
+            </div>
+            <div className="flex items-start gap-3">
+              <Phone className="mt-0.5 size-4 text-brand-bright" aria-hidden />
+              <div>
+                <dt className="font-medium">Phone</dt>
+                <dd className="mt-0.5 flex flex-col gap-1 text-muted-foreground">
+                  {phoneNumbers.map((phone) => (
+                    <a
+                      key={phone.href}
+                      href={phone.href}
+                      className="transition-colors hover:text-foreground"
+                    >
+                      {phone.display}
+                    </a>
+                  ))}
                 </dd>
               </div>
             </div>

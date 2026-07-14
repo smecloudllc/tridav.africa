@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowUpRight, Mail, MapPin } from "lucide-react";
+import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
 
+import { phoneNumbers } from "@/lib/data/contact";
 import { products } from "@/lib/data/products";
 import { services } from "@/lib/data/services";
 
@@ -118,6 +119,20 @@ export function Footer() {
                 >
                   hello@tridav.africa
                 </a>
+              </li>
+              <li className="flex items-start gap-2.5">
+                <Phone className="mt-0.5 size-4 shrink-0" aria-hidden />
+                <div className="flex flex-col gap-1">
+                  {phoneNumbers.map((phone) => (
+                    <a
+                      key={phone.href}
+                      href={phone.href}
+                      className="transition-colors hover:text-foreground"
+                    >
+                      {phone.display}
+                    </a>
+                  ))}
+                </div>
               </li>
             </ul>
             <Link

@@ -25,7 +25,7 @@ export function TrustBar() {
     >
       <div className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6">
         <p className="text-center text-xs font-medium uppercase tracking-widest text-muted-foreground">
-          Trusted by schools, SMEs, and logistics operators across Ghana
+          Trusted by schools, SMEs, and logistics operators across Africa
         </p>
         <ul className="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
           {placeholderClients.map((name) => (

@@ -90,7 +90,8 @@ export function AboutContent() {
               disappeared after launch.
             </p>
             <p>
-              So we built both muscles under one roof. Today, our team in Ghana
+              So we built both muscles under one roof. Today, our team —
+              headquartered in Accra and working across the continent —
               designs, engineers, and operates a portfolio of live platforms —
               across education, logistics, finance, and sustainability — and
               brings that same product discipline to every consulting and

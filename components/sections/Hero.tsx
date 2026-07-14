@@ -32,7 +32,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary/60 px-3.5 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur"
           >
             <span className="size-1.5 rounded-full bg-brand-bright" aria-hidden />
-            Technology consultancy · Ghana &amp; West Africa
+            Technology consultancy · Africa &amp; beyond
           </motion.p>
 
           <motion.h1
