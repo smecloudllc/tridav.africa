@@ -6,7 +6,7 @@ import { CTASection } from "@/components/sections/CTASection";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Tridav is a technology consultancy headquartered in Accra, bringing world-class software engineering to businesses and institutions across Africa — and beyond.",
+    "Tridav is a technology consultancy headquartered in Ghana, bringing world-class software engineering to businesses and institutions across Africa and beyond.",
 };
 
 export default function AboutPage() {

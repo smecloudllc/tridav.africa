@@ -9,7 +9,7 @@ import { services } from "@/lib/data/services";
 import { cn } from "@/lib/utils";
 
 interface ServiceDetailProps {
-  /** Slug only — icon components can't cross the server/client boundary. */
+  /** Slug only: icon components can't cross the server/client boundary. */
   slug: string;
   index: number;
 }
@@ -50,8 +50,8 @@ export function ServiceDetail({ slug, index }: ServiceDetailProps) {
             <span className="text-sm leading-relaxed text-muted-foreground">
               <span className="font-semibold text-foreground">
                 {service.caseStudy.product}
-              </span>{" "}
-              — {service.caseStudy.note}
+              </span>
+              : {service.caseStudy.note}
               <span className="mt-1 flex items-center gap-1 font-medium text-brand-bright">
                 See the work
                 <ArrowRight

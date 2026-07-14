@@ -48,7 +48,7 @@ export function Hero() {
             className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg"
           >
             Tridav helps institutions and growing companies modernize how they
-            run — through digital transformation, IT consultancy, ERP
+            run, through digital transformation, IT consultancy, ERP
             implementation, and custom software engineered entirely in-house.
           </motion.p>
 
@@ -90,7 +90,7 @@ export function Hero() {
           </motion.ul>
         </motion.div>
 
-        {/* Terminal + metric cards mockup — "we build real software". */}
+        {/* Terminal + metric cards mockup: "we build real software". */}
         <motion.div
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
@@ -104,7 +104,7 @@ export function Hero() {
               <span className="size-2.5 rounded-full bg-foreground/30" />
               <span className="size-2.5 rounded-full bg-foreground/15" />
               <span className="ml-3 font-mono text-xs text-muted-foreground">
-                tridav — deploy
+                tridav: deploy
               </span>
             </div>
             <div className="space-y-2 p-5 font-mono text-[13px] leading-relaxed">
@@ -122,7 +122,7 @@ export function Hero() {
               </p>
               <p className="text-muted-foreground">
                 <span className="text-success">success</span> Deployed in
-                2.4s — all checks passing
+                2.4s, all checks passing
               </p>
               <p className="text-muted-foreground">
                 <span className="text-success">➜</span>{" "}
@@ -137,8 +137,8 @@ export function Hero() {
             transition={{ duration: 0.45, delay: 0.65, ease: "easeOut" }}
             className="absolute -bottom-8 -left-8 w-44 rounded-xl border border-border bg-card p-4 shadow-xl"
           >
-            <p className="text-xs text-muted-foreground">Revenue collected</p>
-            <p className="mt-1 text-xl font-bold tracking-tight">₵ 2.4M</p>
+            <p className="text-xs text-muted-foreground">Lives impacted</p>
+            <p className="mt-1 text-xl font-bold tracking-tight">150,000+</p>
             <div className="mt-2 flex items-end gap-1">
               {[35, 55, 40, 70, 62, 85, 100].map((h, i) => (
                 <span

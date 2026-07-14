@@ -10,18 +10,19 @@ export const serviceOptions = [
 
 export const contactSchema = z.object({
   name: z.string().min(2, "Please enter your full name"),
-  company: z.string().min(2, "Please enter your company or institution"),
+  company: z.string().optional(),
   email: z.string().email("Please enter a valid email address"),
   phone: z
     .string()
-    .min(7, "Please enter a valid phone number")
-    .regex(/^[+\d][\d\s()-]{5,19}$/, "Please enter a valid phone number"),
-  service: z.enum(serviceOptions, {
-    message: "Please select a service",
-  }),
+    .regex(/^[+\d][\d\s()-]{5,19}$/, "Please enter a valid phone number")
+    .optional()
+    .or(z.literal("")),
+  service: z
+    .enum(serviceOptions, { message: "Please select a service" })
+    .optional(),
   message: z
     .string()
-    .min(20, "Tell us a bit more — at least 20 characters")
+    .min(20, "Tell us a bit more, at least 20 characters")
     .max(2000, "Please keep your message under 2000 characters"),
 });
 

@@ -33,7 +33,7 @@ export function CTASection() {
           className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg"
         >
           Tell us where your operations hurt. We&apos;ll show you what modern
-          systems can do about it — with a clear roadmap and honest numbers.
+          systems can do about it, with a clear roadmap and honest numbers.
         </motion.p>
         <motion.div
           variants={fadeUp}

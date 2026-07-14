@@ -22,7 +22,7 @@ export async function POST(request: Request) {
   }
 
   // TODO: forward to email service / CRM (e.g. Resend, HubSpot).
-  // Env vars for that belong in .env — see .env.example.
+  // Env vars for that belong in .env, see .env.example.
   console.log("[contact] consultation request received:", parsed.data);
 
   return NextResponse.json({ ok: true });

@@ -35,7 +35,7 @@ const values: Value[] = [
     icon: Lightbulb,
     title: "Context-aware engineering",
     description:
-      "We design for the realities of African operations — connectivity, payments, devices, and how teams actually work.",
+      "We design for the realities of African operations: connectivity, payments, devices, and how teams actually work.",
   },
   {
     icon: Handshake,
@@ -46,7 +46,7 @@ const values: Value[] = [
 ];
 
 const whyUs = [
-  "Full-stack, in-house delivery — strategy through support, one accountable team",
+  "Full-stack, in-house delivery: strategy through support, one accountable team",
   "A live product portfolio proving we can ship and operate real platforms",
   "Experience across education, logistics, finance, sustainability, and enterprise ops",
   "Enterprise discipline: version control, testing, staging, honest timelines",
@@ -90,11 +90,11 @@ export function AboutContent() {
               disappeared after launch.
             </p>
             <p>
-              So we built both muscles under one roof. Today, our team —
-              headquartered in Accra and working across the continent —
-              designs, engineers, and operates a portfolio of live platforms —
-              across education, logistics, finance, and sustainability — and
-              brings that same product discipline to every consulting and
+              So we built both muscles under one roof. Today, our team is
+              headquartered in Ghana and works across the continent,
+              designing, engineering, and operating a portfolio of live
+              platforms in education, logistics, finance, and sustainability.
+              We bring that same product discipline to every consulting and
               transformation engagement.
             </p>
             <p>
@@ -102,8 +102,8 @@ export function AboutContent() {
               <span className="text-foreground">
                 bring world-class software engineering to African businesses
                 and institutions
-              </span>{" "}
-              — not as a luxury, but as standard practice.
+              </span>
+              , not as a luxury, but as standard practice.
             </p>
           </motion.div>
         </motion.div>

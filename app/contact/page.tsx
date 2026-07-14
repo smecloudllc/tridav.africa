@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Clock, Mail, MapPin, Phone } from "lucide-react";
+import { Clock, Mail, MapPin } from "lucide-react";
 
 import { ContactForm } from "@/components/sections/ContactForm";
+import { WhatsappIcon } from "@/components/icons/WhatsappIcon";
 import { phoneNumbers } from "@/lib/data/contact";
 
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Book a consultation with Tridav — digital transformation, IT consultancy, ERP implementation, and custom software for African businesses and institutions.",
+    "Book a consultation with Tridav for digital transformation, IT consultancy, ERP implementation, and custom software for African businesses and institutions.",
 };
 
 export default function ContactPage() {
@@ -28,7 +29,7 @@ export default function ContactPage() {
           </h1>
           <p className="mt-5 max-w-md text-base leading-relaxed text-muted-foreground sm:text-lg">
             Tell us about your organisation and what you want to change.
-            We&apos;ll come back with an honest read on what it takes — usually
+            We&apos;ll come back with an honest read on what it takes, usually
             within one business day.
           </p>
 
@@ -48,14 +49,16 @@ export default function ContactPage() {
               </div>
             </div>
             <div className="flex items-start gap-3">
-              <Phone className="mt-0.5 size-4 text-brand-bright" aria-hidden />
+              <WhatsappIcon className="mt-0.5 size-4 text-brand-bright" aria-hidden />
               <div>
-                <dt className="font-medium">Phone</dt>
+                <dt className="font-medium">WhatsApp</dt>
                 <dd className="mt-0.5 flex flex-col gap-1 text-muted-foreground">
                   {phoneNumbers.map((phone) => (
                     <a
                       key={phone.href}
                       href={phone.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="transition-colors hover:text-foreground"
                     >
                       {phone.display}
@@ -68,7 +71,7 @@ export default function ContactPage() {
               <MapPin className="mt-0.5 size-4 text-brand-bright" aria-hidden />
               <div>
                 <dt className="font-medium">Location</dt>
-                <dd className="mt-0.5 text-muted-foreground">Accra, Ghana</dd>
+                <dd className="mt-0.5 text-muted-foreground">Ghana</dd>
               </div>
             </div>
             <div className="flex items-start gap-3">

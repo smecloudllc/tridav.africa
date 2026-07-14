@@ -3,7 +3,8 @@ export type ProductCategory =
   | "Sustainability"
   | "Logistics"
   | "Finance & Revenue"
-  | "Public Sector";
+  | "Public Sector"
+  | "Agriculture";
 
 export interface Product {
   name: string;
@@ -21,8 +22,8 @@ export interface Product {
   live: boolean;
 }
 
-// NOTE: descriptions are placeholders inferred from product names —
-// replace with accurate 1–2 sentence descriptions once available.
+// NOTE: descriptions are placeholders inferred from product names.
+// Replace with accurate 1-2 sentence descriptions once available.
 export const products: Product[] = [
   {
     name: "EduInsight",
@@ -67,6 +68,7 @@ export const products: Product[] = [
       "A revenue collection platform helping institutions digitize billing, payments, and reconciliation.",
     url: "https://revcollect.apptray.cc",
     monogram: "Rc",
+    logoSrc: "/products/revcollect.png",
     imageSrc: "/products/revcollect-photo.jpg",
     gradient: "from-foreground/22 via-foreground/9 to-transparent",
     live: true,
@@ -75,12 +77,24 @@ export const products: Product[] = [
     name: "PIMS",
     category: "Public Sector",
     description:
-      "A prison information management system — coordinating visit scheduling, partner organisation access, and day-to-day administration. Built to be white-labeled for any country's correctional service.",
+      "A prison information management system that coordinates visit scheduling, partner organisation access, and day-to-day administration. Built to be white-labeled for any country's correctional service.",
     url: "https://gpims.apptray.cc/",
     monogram: "Pi",
     imageSrc: "/products/pims-photo.jpg",
     gradient: "from-foreground/18 via-foreground/7 to-transparent",
     live: true,
+  },
+  {
+    name: "FarmBridge",
+    category: "Agriculture",
+    description:
+      "An agricultural platform connecting farmers to markets, resources, and collective opportunities for growth.",
+    url: "#", // TODO: add live URL once available
+    monogram: "Fb",
+    logoSrc: "/products/farmbridge.png",
+    imageSrc: "/products/farmbridge-photo.jpg",
+    gradient: "from-foreground/20 via-foreground/8 to-transparent",
+    live: false,
   },
 ];
 
@@ -90,4 +104,5 @@ export const productCategories: ProductCategory[] = [
   "Finance & Revenue",
   "Sustainability",
   "Public Sector",
+  "Agriculture",
 ];

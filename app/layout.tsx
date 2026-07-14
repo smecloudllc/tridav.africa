@@ -18,8 +18,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://tridav.africa"),
   title: {
-    default: "Tridav — Digital Transformation & ERP Partner for Africa",
-    template: "%s — Tridav",
+    default: "Tridav: Digital Transformation & ERP Partner for Africa",
+    template: "%s | Tridav",
   },
   description:
     "Tridav helps African businesses and institutions modernize with digital transformation, IT consultancy, ERP implementation, and custom software built in-house.",
@@ -27,15 +27,15 @@ export const metadata: Metadata = {
     type: "website",
     siteName: "Tridav",
     url: "https://tridav.africa",
-    title: "Tridav — Digital Transformation & ERP Partner for Africa",
+    title: "Tridav: Digital Transformation & ERP Partner for Africa",
     description:
-      "Digital transformation, IT consultancy, ERP implementation, and custom software — engineered in-house for African businesses and institutions.",
+      "Digital transformation, IT consultancy, ERP implementation, and custom software, engineered in-house for African businesses and institutions.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tridav — Digital Transformation & ERP Partner for Africa",
+    title: "Tridav: Digital Transformation & ERP Partner for Africa",
     description:
-      "Digital transformation, IT consultancy, ERP implementation, and custom software — engineered in-house for African businesses and institutions.",
+      "Digital transformation, IT consultancy, ERP implementation, and custom software, engineered in-house for African businesses and institutions.",
   },
 };
 

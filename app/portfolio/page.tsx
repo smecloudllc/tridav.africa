@@ -6,7 +6,7 @@ import { CTASection } from "@/components/sections/CTASection";
 export const metadata: Metadata = {
   title: "Portfolio",
   description:
-    "Live platforms designed, built, and shipped in-house by Tridav — across education, logistics, finance, sustainability, and enterprise operations.",
+    "Live platforms designed, built, and shipped in-house by Tridav, spanning education, logistics, finance, sustainability, and the public sector.",
 };
 
 export default function PortfolioPage() {

@@ -48,7 +48,7 @@ export function Navbar() {
         <Link
           href="/"
           className="flex items-center gap-2 rounded-md focus-visible:outline-2 focus-visible:outline-offset-4"
-          aria-label="Tridav — home"
+          aria-label="Tridav: home"
         >
           <Image src="/logo.png" alt="" width={32} height={32} className="size-8" priority />
           <span className="text-lg font-semibold tracking-tight">

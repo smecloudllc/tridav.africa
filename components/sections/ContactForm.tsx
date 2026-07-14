@@ -105,7 +105,10 @@ export function ContactForm() {
           )}
         </div>
         <div className="space-y-2">
-          <Label htmlFor="company">Company / institution</Label>
+          <Label htmlFor="company">
+            Company / institution{" "}
+            <span className="text-muted-foreground">(optional)</span>
+          </Label>
           <Input
             id="company"
             autoComplete="organization"
@@ -135,7 +138,9 @@ export function ContactForm() {
           )}
         </div>
         <div className="space-y-2">
-          <Label htmlFor="phone">Phone</Label>
+          <Label htmlFor="phone">
+            Phone <span className="text-muted-foreground">(optional)</span>
+          </Label>
           <Input
             id="phone"
             type="tel"
@@ -151,7 +156,10 @@ export function ContactForm() {
       </div>
 
       <div className="space-y-2">
-        <Label htmlFor="service">Service you&apos;re interested in</Label>
+        <Label htmlFor="service">
+          Service you&apos;re interested in{" "}
+          <span className="text-muted-foreground">(optional)</span>
+        </Label>
         <Controller
           control={control}
           name="service"

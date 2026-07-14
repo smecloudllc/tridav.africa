@@ -51,7 +51,7 @@ export const services: Service[] = [
     summary:
       "Independent technology strategy from a team that ships software, not just slides.",
     description:
-      "Technology decisions are expensive to get wrong. We advise boards, founders, and IT leads on technology strategy, systems architecture, and vendor selection — grounded in what we learn shipping our own products. You get recommendations we would build ourselves, not a generic framework.",
+      "Technology decisions are expensive to get wrong. We advise boards, founders, and IT leads on technology strategy, systems architecture, and vendor selection, grounded in what we learn shipping our own products. You get recommendations we would build ourselves, not a generic framework.",
     includes: [
       "Technology strategy and multi-year roadmaps",
       "Systems architecture design and review",
@@ -67,7 +67,7 @@ export const services: Service[] = [
     summary:
       "Custom ERP builds and integrations that fit how your organisation actually works.",
     description:
-      "Off-the-shelf ERPs often fight the way African SMEs and institutions really operate. We design and implement ERP systems around your actual workflows — finance, billing, inventory, HR, and reporting — and integrate them with the tools and payment rails you already use.",
+      "Off-the-shelf ERPs often fight the way African SMEs and institutions really operate. We design and implement ERP systems around your actual workflows, including finance, billing, inventory, HR, and reporting, then integrate them with the tools and payment rails you already use.",
     includes: [
       "Requirements discovery and process mapping",
       "Custom ERP build or platform configuration",
@@ -88,7 +88,7 @@ export const services: Service[] = [
     summary:
       "Web, mobile, and enterprise applications engineered end-to-end in-house.",
     description:
-      "When no product on the market fits, we build it. Our in-house engineering team has shipped platforms across education, logistics, finance, and sustainability — so we bring product-grade discipline to client work: real version control, testing, CI/CD, and long-term maintainability.",
+      "When no product on the market fits, we build it. Our in-house engineering team has shipped platforms across education, logistics, finance, and sustainability, so we bring product-grade discipline to client work: real version control, testing, CI/CD, and long-term maintainability.",
     includes: [
       "Web and mobile application development",
       "Enterprise platforms and internal tools",

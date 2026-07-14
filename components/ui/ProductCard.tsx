@@ -97,7 +97,7 @@ export function ProductCard({ product }: { product: Product }) {
       href={product.url}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={`${product.name} — visit site (opens in new tab)`}
+      aria-label={`${product.name}: visit site (opens in new tab)`}
       className="h-full rounded-xl focus-visible:outline-2 focus-visible:outline-offset-4"
     >
       {CardInner}

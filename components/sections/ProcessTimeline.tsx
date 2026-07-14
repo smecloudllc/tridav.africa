@@ -23,7 +23,7 @@ const steps: Step[] = [
     icon: Search,
     title: "Discover",
     description:
-      "We map how your organisation actually operates — processes, systems, pain points — before recommending anything.",
+      "We map how your organisation actually operates, including its processes, systems, and pain points, before recommending anything.",
   },
   {
     icon: PenTool,
@@ -35,7 +35,7 @@ const steps: Step[] = [
     icon: Hammer,
     title: "Build",
     description:
-      "Our in-house engineers ship in short, visible iterations — with testing, staging environments, and honest timelines.",
+      "Our in-house engineers ship in short, visible iterations, with testing, staging environments, and honest timelines.",
   },
   {
     icon: TrendingUp,

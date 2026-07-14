@@ -24,7 +24,7 @@ export default function ServicesPage() {
             Services
           </p>
           <h1 className="mt-3 max-w-2xl text-4xl font-bold tracking-tight text-balance sm:text-5xl">
-            Strategy, systems, and software — under one roof
+            Strategy, systems, and software, under one roof
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
             Most consultancies advise. We advise, then build, then support what

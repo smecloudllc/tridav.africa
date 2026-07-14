@@ -27,7 +27,7 @@ export function PortfolioGrid({ limit, showViewAllLink }: PortfolioGridProps) {
         <SectionHeading
           eyebrow="Featured work"
           title="Products we've designed, built, and shipped"
-          description="Not just advisory — a portfolio of live platforms serving education, logistics, finance, and sustainability across the region."
+          description="Not just advisory. A portfolio of live platforms serving education, logistics, finance, and sustainability across the region."
         />
         <motion.div
           variants={staggerContainer}

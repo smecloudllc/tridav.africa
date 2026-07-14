@@ -4,14 +4,8 @@ import { motion } from "framer-motion";
 
 import { fadeIn, viewportOnce } from "@/lib/motion";
 
-// TODO: replace styled placeholders with real client names/logos when available.
-const placeholderClients = [
-  "Ridge Academy",
-  "Volta Logistics",
-  "Meridian SME",
-  "Accra Metro",
-  "Coastline Pharma",
-];
+// TODO: swap for real client logos when available.
+const clients = ["GSI", "Ghana Prisons", "Queensland School", "Ministry of Health"];
 
 export function TrustBar() {
   return (
@@ -25,10 +19,11 @@ export function TrustBar() {
     >
       <div className="mx-auto w-full max-w-6xl px-4 py-8 sm:px-6">
         <p className="text-center text-xs font-medium uppercase tracking-widest text-muted-foreground">
-          Trusted by schools, SMEs, and logistics operators across Africa
+          Trusted by agencies, schools, SMEs, and logistics operators across
+          Africa
         </p>
         <ul className="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
-          {placeholderClients.map((name) => (
+          {clients.map((name) => (
             <li
               key={name}
               className="font-semibold tracking-wide text-muted-foreground/50"

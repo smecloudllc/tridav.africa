@@ -13,7 +13,7 @@ export function ServicesGrid() {
       <SectionHeading
         eyebrow="What we do"
         title="Four ways we move your business forward"
-        description="Strategy, systems, and software — delivered by one accountable in-house team, from first workshop to long-term support."
+        description="Strategy, systems, and software, delivered by one accountable in-house team, from first workshop to long-term support."
       />
       <motion.div
         variants={staggerContainer}
