@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 
@@ -25,9 +26,21 @@ export function ProductCard({ product }: { product: Product }) {
         )}
       >
         <div className="absolute inset-0 bg-dots opacity-60" />
-        <span className="absolute bottom-4 left-5 flex size-12 items-center justify-center rounded-xl border border-white/10 bg-background/70 text-lg font-bold text-foreground backdrop-blur">
-          {product.monogram}
-        </span>
+        {product.logoSrc ? (
+          <span className="absolute bottom-4 left-5 flex size-12 items-center justify-center rounded-xl border border-white/10 bg-white p-2 shadow-sm">
+            <Image
+              src={product.logoSrc}
+              alt={`${product.name} logo`}
+              width={40}
+              height={40}
+              className="size-full object-contain"
+            />
+          </span>
+        ) : (
+          <span className="absolute bottom-4 left-5 flex size-12 items-center justify-center rounded-xl border border-white/10 bg-background/70 text-lg font-bold text-foreground backdrop-blur">
+            {product.monogram}
+          </span>
+        )}
       </div>
 
       <div className="flex flex-1 flex-col p-5">
@@ -50,11 +63,9 @@ export function ProductCard({ product }: { product: Product }) {
         >
           {product.live ? (
             <>
-              <span className="-translate-x-2 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100">
-                Visit site
-              </span>
+              <span>Visit site</span>
               <ArrowUpRight
-                className="size-4 -translate-x-2 transition-transform duration-300 group-hover:translate-x-0"
+                className="size-4 -translate-x-1 transition-transform duration-300 group-hover:translate-x-0.5"
                 aria-hidden
               />
             </>

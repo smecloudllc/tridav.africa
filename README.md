@@ -34,7 +34,7 @@ Copy `.env.example` to `.env.local` when wiring up the contact form email servic
 
 - Replace placeholder client names in `components/sections/TrustBar.tsx` with real logos
 - Confirm stats figures in `components/sections/StatsBand.tsx`
-- Add SMEVault live URL and verify product descriptions in `lib/data/products.ts`
+- Verify product descriptions in `lib/data/products.ts`
 - Replace placeholder social links in `components/layout/Footer.tsx`
 - Confirm contact email (`hello@tridav.africa`) and location details
 

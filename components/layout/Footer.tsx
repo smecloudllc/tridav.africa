@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight, Mail, MapPin } from "lucide-react";
 
@@ -28,12 +29,7 @@ export function Footer() {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div className="max-w-xs">
             <Link href="/" className="flex items-center gap-2" aria-label="Tridav — home">
-              <span
-                aria-hidden
-                className="flex size-8 items-center justify-center rounded-lg bg-primary font-bold text-primary-foreground"
-              >
-                T
-              </span>
+              <Image src="/logo.png" alt="" width={32} height={32} className="size-8" />
               <span className="text-lg font-semibold tracking-tight">
                 Tridav<span className="text-brand-bright">.</span>
               </span>

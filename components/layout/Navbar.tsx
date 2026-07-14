@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
@@ -31,10 +32,10 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "fixed inset-x-0 top-0 z-50 transition-all duration-300",
+        "fixed inset-x-0 top-0 z-50 border-b transition-all duration-300 backdrop-blur-lg",
         scrolled
-          ? "border-b border-border bg-background/80 backdrop-blur-lg"
-          : "border-b border-transparent bg-transparent",
+          ? "border-border bg-background/80"
+          : "border-transparent bg-background/70",
       )}
     >
       <nav
@@ -49,12 +50,7 @@ export function Navbar() {
           className="flex items-center gap-2 rounded-md focus-visible:outline-2 focus-visible:outline-offset-4"
           aria-label="Tridav — home"
         >
-          <span
-            aria-hidden
-            className="flex size-8 items-center justify-center rounded-lg bg-primary font-bold text-primary-foreground"
-          >
-            T
-          </span>
+          <Image src="/logo.png" alt="" width={32} height={32} className="size-8" priority />
           <span className="text-lg font-semibold tracking-tight">
             Tridav
             <span className="text-brand-bright">.</span>

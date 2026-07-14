@@ -63,8 +63,8 @@ export function ContactForm() {
         role="status"
         className="flex flex-col items-center rounded-xl border border-border bg-card p-10 text-center"
       >
-        <span className="flex size-14 items-center justify-center rounded-full bg-emerald-400/15">
-          <CheckCircle2 className="size-7 text-emerald-400" aria-hidden />
+        <span className="flex size-14 items-center justify-center rounded-full bg-foreground/10">
+          <CheckCircle2 className="size-7 text-foreground" aria-hidden />
         </span>
         <h2 className="mt-5 text-xl font-semibold tracking-tight">
           Request received

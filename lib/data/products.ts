@@ -1,18 +1,19 @@
 export type ProductCategory =
   | "Education"
-  | "Storage & Infrastructure"
   | "Sustainability"
   | "Logistics"
-  | "Enterprise"
-  | "Finance & Revenue";
+  | "Finance & Revenue"
+  | "Public Sector";
 
 export interface Product {
   name: string;
   category: ProductCategory;
   description: string;
   url: string;
-  /** Two-letter monogram shown in the card's logo badge. */
+  /** Two-letter monogram shown in the card's logo badge when logoSrc is absent. */
   monogram: string;
+  /** Path to a real product logo (public/products/…). Falls back to the monogram if unset. */
+  logoSrc?: string;
   /** Tailwind gradient classes for the card's visual header. */
   gradient: string;
   live: boolean;
@@ -28,18 +29,9 @@ export const products: Product[] = [
       "A school management platform helping institutions run admissions, academics, and administration in one place.",
     url: "https://eduinsight.pro",
     monogram: "Ed",
-    gradient: "from-sky-500/25 via-blue-600/15 to-transparent",
+    logoSrc: "/products/eduinsight.png",
+    gradient: "from-foreground/20 via-foreground/8 to-transparent",
     live: true,
-  },
-  {
-    name: "SMEVault",
-    category: "Storage & Infrastructure",
-    description:
-      "A secure document and data storage system built for small and medium enterprises.",
-    url: "#", // TODO: add live URL
-    monogram: "SV",
-    gradient: "from-slate-400/25 via-blue-500/10 to-transparent",
-    live: false,
   },
   {
     name: "SmartWaste Africa",
@@ -48,7 +40,8 @@ export const products: Product[] = [
       "A digital platform for smarter waste collection scheduling, tracking, and reporting.",
     url: "https://smartwaste.africa",
     monogram: "Sw",
-    gradient: "from-emerald-500/25 via-teal-600/15 to-transparent",
+    logoSrc: "/products/smartwaste.jpg",
+    gradient: "from-foreground/25 via-foreground/10 to-transparent",
     live: true,
   },
   {
@@ -58,17 +51,8 @@ export const products: Product[] = [
       "A logistics and delivery tracking platform giving customers real-time visibility into shipments.",
     url: "https://logitrak.apptray.cc/customer",
     monogram: "Lt",
-    gradient: "from-amber-500/25 via-orange-600/15 to-transparent",
-    live: true,
-  },
-  {
-    name: "Syntra",
-    category: "Enterprise",
-    description:
-      "An enterprise operations platform streamlining internal workflows and reporting.",
-    url: "https://syntra.apptray.cc",
-    monogram: "Sy",
-    gradient: "from-violet-500/25 via-purple-600/15 to-transparent",
+    logoSrc: "/products/logitrak.svg",
+    gradient: "from-foreground/16 via-foreground/6 to-transparent",
     live: true,
   },
   {
@@ -78,7 +62,17 @@ export const products: Product[] = [
       "A revenue collection platform helping institutions digitize billing, payments, and reconciliation.",
     url: "https://revcollect.apptray.cc",
     monogram: "Rc",
-    gradient: "from-cyan-500/25 via-blue-600/15 to-transparent",
+    gradient: "from-foreground/22 via-foreground/9 to-transparent",
+    live: true,
+  },
+  {
+    name: "PIMS",
+    category: "Public Sector",
+    description:
+      "An online services platform for Ghana's correctional system, coordinating visit scheduling, partner organisation access, and day-to-day administration in one place.",
+    url: "https://gpims.apptray.cc/",
+    monogram: "Gp",
+    gradient: "from-foreground/18 via-foreground/7 to-transparent",
     live: true,
   },
 ];
@@ -88,6 +82,5 @@ export const productCategories: ProductCategory[] = [
   "Logistics",
   "Finance & Revenue",
   "Sustainability",
-  "Storage & Infrastructure",
-  "Enterprise",
+  "Public Sector",
 ];

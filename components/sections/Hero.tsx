@@ -9,7 +9,7 @@ import { fadeUp, staggerContainer } from "@/lib/motion";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden">
+    <section className="hero-dark relative overflow-hidden bg-background text-foreground">
       {/* Atmospheric background: blueprint grid + gradient glow blobs. */}
       <div aria-hidden className="absolute inset-0 bg-grid fade-mask-b" />
       <div
@@ -18,7 +18,7 @@ export function Hero() {
       />
       <div
         aria-hidden
-        className="absolute right-[-160px] top-1/3 h-[320px] w-[320px] rounded-full bg-sky-400/10 blur-[120px]"
+        className="absolute right-[-160px] top-1/3 h-[320px] w-[320px] rounded-full bg-foreground/10 blur-[120px]"
       />
 
       <div className="relative mx-auto grid w-full max-w-6xl gap-14 px-4 pb-20 pt-32 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center lg:pb-28 lg:pt-40">
@@ -100,9 +100,9 @@ export function Hero() {
         >
           <div className="rounded-xl border border-border bg-card/90 shadow-2xl shadow-primary/10 backdrop-blur">
             <div className="flex items-center gap-1.5 border-b border-border px-4 py-3">
-              <span className="size-2.5 rounded-full bg-red-400/70" />
-              <span className="size-2.5 rounded-full bg-amber-400/70" />
-              <span className="size-2.5 rounded-full bg-emerald-400/70" />
+              <span className="size-2.5 rounded-full bg-foreground/50" />
+              <span className="size-2.5 rounded-full bg-foreground/30" />
+              <span className="size-2.5 rounded-full bg-foreground/15" />
               <span className="ml-3 font-mono text-xs text-muted-foreground">
                 tridav — deploy
               </span>
